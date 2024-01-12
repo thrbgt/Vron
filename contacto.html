@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacta con Nosotros - VRON</title>
+    <style>
+        /* Estilos específicos para la marca VRON */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .barra-inicio {
+            background: #000; /* Barra en color negro */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 97%;
+            padding: 20px 20px;
+        }
+
+        .barra-inicio a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .contenido-contacto {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .contenido-contacto h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .formulario-contacto {
+            background: #000; /* Fondo negro */
+            color: #fff;
+            border-radius: 20px;
+            width: 70%; /* Ancho del formulario */
+            max-width: 500px; /* Ancho máximo del formulario */
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .formulario-contacto label {
+            display: block;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .formulario-contacto input,
+        .formulario-contacto textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background: #444; /* Fondo de entrada */
+            color: #fff;
+            text-align: center; /* Centra el texto */
+        }
+
+        .formulario-contacto button {
+            background: #0074E4;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .formulario-contacto button:hover {
+            background: #005DA6;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra-inicio">
+        <div class="logo">
+            <a href="inicio.html">VRON</a>
+        </div>
+        <div class="navegacion">
+            <a href="inicio.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="tiendas.html">Tiendas</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+
+        </div>
+    </div>
+
+    <div class="contenido-contacto">
+        <h2>Contacta con Nosotros</h2>
+        <p>¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte.</p>
+    </div>
+
+    <div class="formulario-contacto">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 VRON</p>
+    </footer>
+</body>
+</html>

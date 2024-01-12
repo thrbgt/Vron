@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .barra-inicio {
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 97%;
+            padding: 20px 20px;
+        }
+
+        .barra-inicio a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .contenido-blog {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .contenido-blog h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .logo-marca img {
+            width: 150px;
+        }
+
+        .entrada-blog {
+            background: #333;
+            color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: left;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            transition: background-color 0.3s;
+            width: 70%;
+            max-width: 800px;
+        }
+
+        .entrada-blog h3 {
+            font-size: 26px;
+            margin: 0;
+            color: #0074E4;
+        }
+
+        .entrada-blog p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .entrada-blog a {
+            color: #0074E4;
+            text-decoration: none;
+        }
+
+        .entrada-blog a:hover {
+            text-decoration: underline;
+        }
+
+        .entrada-blog {
+            background: #333;
+            padding: 20px;
+            border: 2px solid #0074E4;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            width: 70%;
+            max-width: 800px;
+        }
+
+        .entrada-blog:hover {
+            background: #444;
+        }
+
+        .entrada-blog h3 {
+            font-size: 28px;
+            margin: 0;
+            color: #0074E4;
+        }
+
+        .entrada-blog p {
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .respuesta {
+            margin: 30px;
+            text-align: center;
+        }
+
+        .respuesta h3 {
+            font-size: 26px;
+            margin: 0;
+            color: #0074E4;
+        }
+
+        .respuesta p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* Estilos para el menú desplegable */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .contenido-centrado {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .contenido-centrado h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .imagen-centrada {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo-marca img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra-inicio">
+        <div class="logo">
+            <a href="inicio.html">VRON</a>
+        </div>
+        <div class="navegacion">
+            <a href="inicio.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="tiendas.html">Tiendas</a>
+            <div class="dropdown">
+                <button>Blog &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="bienes.html">Bienes</a>
+                    <a href="departamentos.html">Departamentos</a>
+                    <a href="https://view.genial.ly/652cf03089239d001159afad/interactive-content-dafo-formas-color">Analisis</a>
+                    <a href="https://view.genial.ly/652f95f9440caa0011db2f03/interactive-content-dafo-formas-color">DAFO</a>
+                    <a href="organigrama.html">Organigrama</a>
+                 </div>
+            </div>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="contenido-centrado">
+        <div class="logo-marca">
+            <img src="logooo.png" alt="Logo de VRON">
+        </div>
+        <img class="imagen-centrada" src="organigrama.png" alt="Organigrama">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 VRON</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .barra-inicio {
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 97%;
+            padding: 20px 20px;
+        }
+
+        .barra-inicio a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .contenido-blog {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .contenido-blog h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .logo-marca img {
+            width: 150px;
+        }
+
+        .entrada-blog {
+            background: #333;
+            color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: left;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            transition: background-color 0.3s;
+            width: 70%; /* Misma anchura para todas las cajas */
+            max-width: 800px;
+        }
+
+        .entrada-blog h3 {
+            font-size: 26px;
+            margin: 0;
+            color: #0074E4;
+        }
+
+        .entrada-blog p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .entrada-blog a {
+            color: #0074E4;
+            text-decoration: none;
+        }
+
+        .entrada-blog a:hover {
+            text-decoration: underline;
+        }
+
+        .entrada-blog {
+            background: #333;
+            padding: 20px;
+            border: 2px solid #0074E4;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            width: 70%;
+            max-width: 800px;
+        }
+
+        .entrada-blog:hover {
+            background: #444;
+        }
+
+        .entrada-blog h3 {
+            font-size: 28px;
+            margin: 0;
+            color: #0074E4;
+        }
+
+        .entrada-blog p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        /* Estilos para el menú desplegable */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra-inicio">
+        <div class="logo">
+            <a href="inicio.html">VRON</a>
+        </div>
+        <div class="navegacion">
+            <a href="inicio.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="tiendas.html">Tiendas</a>
+            <div class="dropdown">
+                <button>Blog &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="bienes.html">Bienes</a>
+                    <a href="departamentos.html">Departamentos</a>
+                    <a href="https://view.genial.ly/652cf03089239d001159afad/interactive-content-dafo-formas-color">Analisis</a>
+                    <a href="https://view.genial.ly/652f95f9440caa0011db2f03/interactive-content-dafo-formas-color">DAFO</a>
+                    <a href="organigrama.html">Organigrama</a>
+                </div>
+            </div>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="contenido-blog">
+        <h2>Blog de VRON</h2>
+        <div class="logo-marca">
+            <img src="logooo.png" alt="VRON">
+        </div>
+        <p>Descubre las últimas noticias, novedades y consejos en nuestro blog.</p>
+    </div>
+    <div class="entrada-blog">
+        <h3>Nuestra Historia</h3>
+        <p>Fundada en el año 2023, Vron ha recorrido un emocionante camino. Nuestra pasión por la moda nos impulsó a empezar este viaje, desde entonces hemos estado comprometidos con la creación de ropa que se adapte a tu estilo de vida y personalidad únicos.</p>
+    </div>
+    <div class="entrada-blog">
+        <h3>¿Quienes somos?</h3>
+        <p>En Vron, creemos que la moda no solo es una declaración de estilo, sino una expresión de individualidad. Desde nuestros modestos comienzos, nos hemos dedicado a ofrecer prendas de alta calidad que reflejan la elegancia, la comodidad y la versatilidad.</p>
+    </div>
+    <div class="entrada-blog">
+        <h3>Valores</h3>
+        <p>- Creatividad <br>
+           - Autenticidad <br>
+           - Sostenibilidad <br>
+           - Calidad <br>
+           - Comunidad.</p>
+    </div>
+        <h2>¡Ayúdanos a mejorar!</h2>
+    <a href="https://www.survio.com/survey/w/U9M5A3O7C3C4A7J6Y" target="_blank" style="display:inline-block;text-decoration:none;background-color:#1B54D6;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-       moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Iniciar Encuesta Ahora!</a>
+        <h2>Blog Encuestas</h2>
+    <a href="https://emu-dandelion-tbd6.squarespace.com/" target="_blank" style="display:inline-block;text-decoration:none;background-color:#1B54D6;color:#ffffff;font-family:Arial, Helvetica, sans-serif;-webkit-border-radius:4px;-       moz-border-radius:4px;border-radius:4px;padding:11px 25px;font-size:14px;line-height:180%;font-weight: bold;letter-spacing: 0.5px">Visitanos</a>
+
+    <footer>
+        <p>&copy; 2023 VRON</p>
+    </footer>
+</body>
+</html>

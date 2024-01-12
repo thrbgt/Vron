@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>VRON</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .video-background video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+
+        .barra-inicio {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+
+        .barra-inicio a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .logo a {
+            color: #0074E4;
+            text-decoration: none;
+        }
+
+        .navegacion {
+            display: flex;
+        }
+
+        .navegacion a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .marca-logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .marca-logo img {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        .catalogo {
+
+        }
+
+        .carrito {
+
+        }
+
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <div class="barra-inicio">
+        <div class="logo">
+            <a href="inicio.html">VRON</a>
+        </div>
+        <div class="navegacion">
+            <a href="inicio.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="tiendas.html">Tiendas</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <div class="marca-logo">
+        <img src="logooo.png" alt="VRON">
+    </div>
+
+    <h1>VRON</h1>
+
+    <div class="catalogo">
+
+    </div>
+
+    <div class="carrito">
+
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2023 VRON</p>
+    </footer>
+</body>
+</html>

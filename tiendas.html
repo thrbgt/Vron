@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Estilos específicos para la marca VRON */
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .barra-inicio {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 20px;
+        }
+
+        .barra-inicio a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navegacion {
+            display: flex;
+        }
+
+        .navegacion a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .marca-logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .marca-logo img {
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+            text-transform: uppercase;
+            margin-top: 30px;
+            color: #fff;
+        }
+
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .map {
+            width: 40%;
+            height: 250px;
+            margin-bottom: 20px;
+        }
+
+        .location-name {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="barra-inicio">
+        <div class="logo">
+            <a href="inicio.html">VRON</a>
+        </div>
+        <div class="navegacion">
+            <a href="inicio.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="tiendas.html">Tiendas</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="marca-logo">
+        <img src="logooo.png" alt="VRON">
+    </div>
+
+    <h1>VRON - Tiendas</h1>
+
+    <div class="map-container">
+        <div class="location-name">Santiago Bernabéu</div>
+        <div id="map-santiago" class="map"></div>
+    </div>
+
+    <div class="map-container">
+        <div class="location-name">Museo Fernando Alonso, Asturias</div>
+        <div id="map-alonso" class="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var mapSantiago = L.map('map-santiago').setView([40.453060, -3.688350], 16);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(mapSantiago);
+        L.marker([40.453060, -3.688350]).addTo(mapSantiago).bindPopup("Santiago Bernabéu").openPopup();
+    </script>
+
+    <script>
+        var mapAlonso = L.map('map-alonso').setView([43.537176, -5.664815], 16);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(mapAlonso);
+        L.marker([43.537176, -5.664815]).addTo(mapAlonso).bindPopup("Museo Fernando Alonso, Asturias").openPopup();
+    </script>
+</body>
+</html>
